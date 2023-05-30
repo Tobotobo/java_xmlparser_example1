@@ -1,0 +1,6 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "java.inlayHints.parameterNames.enabled": "none"
+}
