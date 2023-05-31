@@ -28,14 +28,14 @@ public class Example3 {
 
         // フォルダを作成しつつXMLファイルを加工して格納
         for (var file : xmlFiles) {
-            var srcPaht = file.toPath().toAbsolutePath();
-            var dstPath = dstDirPath.resolve(srcDirPath.relativize(srcPaht));
+            var srcPath = file.toPath().toAbsolutePath();
+            var dstPath = dstDirPath.resolve(srcDirPath.relativize(srcPath));
 
             // フォルダ作成※再帰的
             dstPath.getParent().toFile().mkdirs();
 
             // XMLファイルを加工
-            processXml(srcPaht, dstPath);
+            processXml(srcPath, dstPath);
         }
 
         System.out.println("完了");
